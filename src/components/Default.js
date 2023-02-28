@@ -4,7 +4,7 @@ import Login from './Login';
 
 const Default = () => {
 
-    const [setAlert] = useState(null);
+    const [alert, setAlert] = useState(null);
 
     const showAlert = (message, type) => {
         setAlert({

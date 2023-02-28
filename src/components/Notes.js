@@ -1,14 +1,10 @@
 import React, { useState, useContext, useEffect, useRef } from 'react'
-// import React, { useState, useContext, useRef } from 'react'
 import noteContext from '../context/notes/noteContext'
 import Default from './Default';
 import Noteitem from './Noteitem';
-// import { useNavigate } from 'react-router-dom';
 
 const Notes = (props) => {
-    // let navigate = useNavigate();
     const context = useContext(noteContext);
-    // const { notes, editNote } = context;
     const { notes, getNotes, editNote } = context;
 
     useEffect(() => {
